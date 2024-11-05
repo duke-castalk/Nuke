@@ -1,34 +1,21 @@
-{
-  "name": "Nuke",
-  "version": "12.8",
-  "summary": "A powerful image loading and caching system",
-  "description": "A powerful image loading and caching system which makes simple tasks like loading images into views extremely simple, while also supporting more advanced features for more demanding apps.",
-  "homepage": "https://github.com/kean/Nuke",
-  "license": "MIT",
-  "authors": "Alexander Grebenyuk",
-  "social_media_url": "https://twitter.com/a_grebenyuk",
-  "source": {
-    "git": "https://github.com/duke-castalk/Nuke.git",
-    "branch": "main"
-  },
-  "swift_versions": [
-    "5.1",
-    "5.2",
-    "5.3",
-    "5.4",
-    "5.5",
-    "5.6",
-    "5.7",
-    "5.8",
-    "5.9",
-    "5.10"
-  ],
-  "platforms": {
-    "ios": "13.0",
-    "watchos": "6.0",
-    "osx": "10.15",
-    "tvos": "13.0"
-  },
-  "source_files": "Sources/**/*",
-  "swift_version": "5.10"
-}
+Pod::Spec.new do |s|
+    s.name             = 'Nuke'
+    s.version          = '12.8'
+    s.summary          = 'A powerful image loading and caching system'
+    s.description  = <<-EOS
+    A powerful image loading and caching system which makes simple tasks like loading images into views extremely simple, while also supporting more advanced features for more demanding apps.
+    EOS
+
+    s.homepage         = 'https://github.com/kean/Nuke'
+    s.license          = 'MIT'
+    s.author           = 'Alexander Grebenyuk'
+    s.social_media_url = 'https://twitter.com/a_grebenyuk'
+    s.source           = { :git => 'https://github.com/duke-castalk/Nuke.git', :tag => s.version.to_s }
+
+    s.ios.deployment_target = '13.0'
+    s.watchos.deployment_target = '6.0'
+    s.osx.deployment_target = '10.14'
+    s.tvos.deployment_target = '13.0'
+
+    s.source_files  = 'Sources/**/*'
+end
