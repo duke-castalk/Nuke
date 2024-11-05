@@ -8,8 +8,8 @@
   "authors": "Alexander Grebenyuk",
   "social_media_url": "https://twitter.com/a_grebenyuk",
   "source": {
-    "git": "https://github.com/kean/Nuke.git",
-    "tag": "12.8"
+    "git": "https://github.com/duke-castalk/Nuke.git",
+    "branch": "main"
   },
   "swift_versions": [
     "5.1",
