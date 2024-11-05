@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
     s.osx.deployment_target = '10.14'
     s.tvos.deployment_target = '13.0'
 
-    s.source_files  = 'Sources/**/*'
+    s.source_files  = 'Sources/Nuke/**/*.{h,swift}'
 end
